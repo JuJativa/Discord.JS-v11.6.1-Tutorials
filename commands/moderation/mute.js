@@ -1,4 +1,4 @@
-const { RichEmbed } = require("discord.js")
+const { MessageEmbed } = require("discord.js")
 const { redlight } = require("../../colours.json");
 
 module.exports = {
@@ -54,7 +54,7 @@ mutee.addRole(muterole.id).then(() => {
 })
 
 //send an embed to the modlogs channel
-let embed = new RichEmbed()
+let embed = new MessageEmbed()
     .setColor(redlight)
     .setAuthor(`${message.guild.name} Modlogs`, message.guild.iconURL)
     .addField("Moderation:", "mute")
